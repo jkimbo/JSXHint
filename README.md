@@ -116,9 +116,9 @@ Optional arguments:
 <dt class="tag-source">Source:</dt>
 <dd class="tag-source"><ul class="dummy">
 <li>
-<a href="https://github.com/CondeNast/JSXHint/blob/master/jsxhint.js">jsxhint.js</a>
+<a href="https://github.com/jkimbo/JSXHint/blob/master/jsxhint.js">jsxhint.js</a>
 <span>, </span>
-<a href="https://github.com/CondeNast/JSXHint/blob/master/jsxhint.js#L329">lineno 329</a>
+<a href="https://github.com/jkimbo/JSXHint/blob/master/jsxhint.js#L336">lineno 336</a>
 </li>
 </ul></dd>
 </dl>
@@ -144,14 +144,18 @@ Type
 and then hint them</p>
 <p>calling cb() directly immediately aborts execution.
 calling done() aborts execution for a particular glob set
-we need to
-1. get ignores, if failure, die
-2. get jshinrc, if failure, die
-3. run process globs
-a. for each glob
-1. filter
-2. transform
-3. lint</p>
+we need to</p>
+<ol>
+<li>get ignores, if failure, die</li>
+<li>get jshinrc, if failure, die</li>
+<li>run process globs
+a. for each glob<ol>
+<li>filter</li>
+<li>transform</li>
+<li>lint</li>
+</ol>
+</li>
+</ol>
 </div>
 <h5>Parameters:</h5>
 <table class="params">
@@ -204,9 +208,9 @@ a. for each glob
 <dt class="tag-source">Source:</dt>
 <dd class="tag-source"><ul class="dummy">
 <li>
-<a href="https://github.com/CondeNast/JSXHint/blob/master/jsxhint.js">jsxhint.js</a>
+<a href="https://github.com/jkimbo/JSXHint/blob/master/jsxhint.js">jsxhint.js</a>
 <span>, </span>
-<a href="https://github.com/CondeNast/JSXHint/blob/master/jsxhint.js#L178">lineno 178</a>
+<a href="https://github.com/jkimbo/JSXHint/blob/master/jsxhint.js#L178">lineno 178</a>
 </li>
 </ul></dd>
 </dl>

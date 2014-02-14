@@ -305,9 +305,15 @@ var lintJSX = function (glb, ignoreList, ignoreFile, hintFile, prjRoot, cb){
     } else {
       jshint.errors.forEach(function(e){
         if(e){
-          console.log('['+e.code.bold.red+']',
-                      e.reason.cyan,
-                      file+':'+e.line+','+e.character);
+          if (true) {
+            // Format: FILE_NAME: line 21, col 56, Missing semicolon. (W033)
+            console.log(file+': line '+e.line+', col '+e.character+', '+e.reason+' ('+e.code+')');
+          } else {
+            console.log('['+e.code.bold.red+']',
+                        e.reason.cyan,
+                        file+':'+e.line+','+e.character);
+          }
+
         }
       });
       done(true);
